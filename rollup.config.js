@@ -29,6 +29,6 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [resolve(), commonjs()],
+    plugins: [resolve(), commonjs(), minify({ comments: false })],
   },
 ];

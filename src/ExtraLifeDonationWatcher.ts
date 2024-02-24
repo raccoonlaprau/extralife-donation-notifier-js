@@ -87,7 +87,7 @@ export class ExtraLifeDonationWatcher extends EventEmitter<IExtraLifeDonationWat
       await this._processDonations();
       this._lastCheck = Date.now();
       this._runCycle();
-    }, 5000);
+    }, 15000); // extralife recommends 15 second poll rate
   }
 
   private async _processDonations() {
