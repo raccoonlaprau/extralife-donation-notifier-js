@@ -28,7 +28,6 @@
     "extra-life",
     "typescript"
   ],
-  "type": "module",
   "author": "Laprau",
   "license": "MIT",
   "bugs": {

@@ -1,13 +1,13 @@
-const { ExtraLifeDonationWatcher } = require('../dist')
+const { ExtraLifeDonationWatcher } = require('../dist');
 
-const watcher = new ExtraLifeDonationWatcher({participantId: "532356"})
+const watcher = new ExtraLifeDonationWatcher({ participantId: '532356' });
 
 watcher.on('started', () => {
-    console.log('watching for donations');
-})
+  console.log('watching for donations');
+});
 
 watcher.on('participant-donation', (donation) => {
-    console.log(JSON.stringify(donation));
-})
+  console.log(JSON.stringify(donation));
+});
 
 watcher.start();
