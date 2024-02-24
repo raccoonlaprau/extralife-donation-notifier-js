@@ -119,9 +119,7 @@ export class ExtraLifeDonationWatcher extends EventEmitter<IExtraLifeDonationWat
 
   private _emitValidDonations(donations: ExtraLifeDonation[], type: keyof IExtraLifeDonationWatcherEvents) {
     donations
-      .filter((donation) => {
-        Date.parse(donation.createdDateUTC) > this._lastCheck;
-      })
+      .filter((donation) => Date.parse(donation.createdDateUTC) > this._lastCheck)
       .reverse()
       .forEach((donation) => {
         this.emit(type, donation);

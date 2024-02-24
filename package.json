@@ -9,7 +9,7 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "test": "jest",
+    "test": "jest ./test",
     "rollup": "rollup -c"
   },
   "repository": {
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/raccoonlaprau/extralife-donation-notifier-js#readme",
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
