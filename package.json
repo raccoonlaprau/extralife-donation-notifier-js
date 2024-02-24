@@ -1,6 +1,6 @@
 {
   "name": "extralife-donation-notifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node/browser library for giving realtime events when your extralife campaign receives a donation",
   "main": "dist/index.js",
   "module": "dist/module.js",

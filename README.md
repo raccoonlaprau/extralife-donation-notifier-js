@@ -13,7 +13,12 @@ Donation object shapes from each event will match the [DonorDrive Public API spe
 
 ## Installation
 
-WIP
+You can install the module via `npm` or `yarn`:
+
+```bash
+npm i extralife-donation-notifier
+yarn add extralife-donation-notifier
+```
 
 ## Usage
 
@@ -54,7 +59,7 @@ Remember to call `watcher.stop()` when finished! Otherwise the pings will contin
 ### Browser
 
 ```html
-<script src="../dist/extra-life-donation-watcher.min.js"></script>
+<script src="https://unpkg.com/extralife-donation-notifier@1.0.0/dist/extra-life-donation-watcher.min.js"></script>
 <script>
   const watcher = new ExtraLifeDonationWatcher.ExtraLifeDonationWatcher({ participantId: '532356' });
   watcher.on('started', () => {
