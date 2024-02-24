@@ -10,6 +10,7 @@ export default [
     output: {
       dir: 'dist',
       format: 'cjs',
+      sourcemap: true,
     },
     plugins: [typescript({ module: 'esnext' })],
   },
