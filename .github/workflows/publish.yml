@@ -38,6 +38,6 @@ jobs:
           path: dist/
       - name: Publish
         run: |
-          npm publish --dry-run --ignore-scripts
+          npm publish --ignore-scripts
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
