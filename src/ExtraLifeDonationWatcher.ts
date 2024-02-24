@@ -31,6 +31,7 @@ export interface IExtraLifeDonationWatcher {
 export interface IExtraLifeDonationWatcherEvents {
   'team-donation': (donation: ExtraLifeDonation) => void;
   'participant-donation': (donation: ExtraLifeDonation) => void;
+  ping: () => void;
   started: () => void;
   error: (e: any) => void;
 }
@@ -82,6 +83,7 @@ export class ExtraLifeDonationWatcher extends EventEmitter<IExtraLifeDonationWat
         return;
       }
 
+      this.emit('ping');
       await this._processDonations();
       this._lastCheck = Date.now();
       this._runCycle();
