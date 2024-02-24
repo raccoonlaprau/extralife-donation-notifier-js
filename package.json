@@ -1,0 +1,38 @@
+{
+  "name": "extralife-donation-notifier",
+  "version": "1.0.0",
+  "description": "A node/browser library for giving realtime events when your extralife campaign receives a donation",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raccoonlaprau/extralife-donation-notifier-js.git"
+  },
+  "keywords": [
+    "extralife",
+    "extra",
+    "life",
+    "extra-life",
+    "typescript"
+  ],
+  "author": "Laprau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raccoonlaprau/extralife-donation-notifier-js/issues"
+  },
+  "homepage": "https://github.com/raccoonlaprau/extralife-donation-notifier-js#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "prettier": "3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "eventemitter3": "^5.0.1",
+    "extra-life": "^1.0.5"
+  }
+}
